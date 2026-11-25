@@ -1,0 +1,17 @@
+
+.table-actions select {
+  min-width: 115px;
+  padding: 7px;
+  border: 1px solid #dce4d8;
+  border-radius: 7px;
+  background-color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .table-actions select {
+    width: 100%;
+    min-width: 0;
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Demo Customer",
+      "email": "customer@test.com",
+      "password": "123456",
+      "phone": "9876543210",
+      "address": "Gandhipuram, Coimbatore",
+      "role": "Customer"
+    },
+    {
+      "id": "u2",
+      "name": "Priya Kumar",
+      "email": "priya@test.com",
+      "password": "123456",
+      "phone": "9876543211",
+      "address": "Peelamedu, Coimbatore",
+      "role": "Customer"
+    },
+    {
+      "id": "u3",
+      "name": "Daily Milk Owner",
+      "email": "owner@test.com",
+      "password": "123456",
+      "phone": "9876543212",
+      "address": "Coimbatore",
+      "role": "Owner"
+    },
+    {
+      "id": "u4",
+      "name": "Delivery Partner",
+      "email": "delivery@test.com",
+      "password": "123456",
+      "phone": "9876543214",
+      "address": "Coimbatore",
+      "role": "Delivery Boy"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "Fresh Cow Milk",
+      "category": "Cow Milk",
+      "pricePerLitre": 60,
+      "rating": 4.8,
+      "stock": 120,
+      "image": "/images/cow-milk.jpg",
+      "description": "Fresh, creamy cow milk collected daily from our farm."
+    },
+    {
+      "id": "p2",
+      "name": "Pure Buffalo Milk",
+      "category": "Buffalo Milk",
+      "pricePerLitre": 75,
+      "rating": 4.7,
+      "stock": 85,
+      "image": "/images/buffalo-milk.jpg",
+      "description": "Rich buffalo milk with a naturally creamy texture."
+    },
+    {
+      "id": "p3",
+      "name": "Homemade Curd",
+      "category": "Curd",
+      "pricePerLitre": 80,
+      "rating": 4.6,
+      "stock": 60,
+      "image": "/images/curd.jpg",
+      "description": "Thick and fresh curd made from quality milk."
+    },
+    {
+      "id": "p4",
+      "name": "Pure Cow Ghee",
+      "category": "Ghee",
+      "pricePerLitre": 650,
+      "rating": 4.9,
+      "stock": 35,
+      "image": "/images/ghee.jpg",
+      "description": "Aromatic traditional ghee prepared in small batches."
+    },
+    {
+      "id": "p5",
+      "name": "Fresh Buttermilk",
+      "category": "Buttermilk",
+      "pricePerLitre": 35,
+      "rating": 4.5,
+      "stock": 90,
+      "image": "/images/buttermilk.jpg",
+      "description": "Light and refreshing buttermilk."
+    },
+    {
+      "id": "p6",
+      "name": "Farm Fresh Paneer",
+      "category": "Paneer",
+      "pricePerLitre": 320,
+      "rating": 4.7,
+      "stock": 25,
+      "image": "/images/paneer.jpg",
+      "description": "Soft paneer made from fresh milk."
+    },
+    {
+      "id": "p7",
+      "name": "Creamy Cheese",
+      "category": "Cheese",
+      "pricePerLitre": 420,
+      "rating": 4.4,
+      "stock": 20,
+      "image": "/images/cheese.jpg",
+      "description": "Fresh dairy cheese with a smooth flavour."
+    },
+    {
+      "id": "p8",
+      "name": "Badam Milk",
+      "category": "Badam Milk",
+      "pricePerLitre": 110,
+      "rating": 4.8,
+      "stock": 45,
+      "image": "/images/badam-milk.jpg",
+      "description": "Delicious milk blended with almond flavour."
+    },
+    {
+      "id": "p9",
+      "name": "Fresh Coconut Milk",
+      "category": "Coconut Milk",
+      "pricePerLitre": 140,
+      "rating": 4.7,
+      "stock": 30,
+      "image": "/images/coconut-milk.jpg",
+      "description": "Fresh coconut milk prepared from mature coconuts, with a naturally rich and creamy taste."
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "s1",
+      "userId": "u1",
+      "customerName": "Demo Customer",
+      "phone": "9876543210",
+      "address": "Gandhipuram, Coimbatore",
+      "milkType": "Fresh Cow Milk",
+      "litre": 1,
+      "time": "Morning",
+      "startDate": "2026-11-10",
+      "endDate": "2026-11-30",
+      "days": 21,
+      "pricePerLitre": 60,
+      "totalPrice": 1260,
+      "status": "Active"
+    },
+    {
+      "id": "s2",
+      "userId": "u2",
+      "customerName": "Priya Kumar",
+      "phone": "9876543211",
+      "address": "Peelamedu, Coimbatore",
+      "milkType": "Pure Buffalo Milk",
+      "litre": 0.5,
+      "time": "Morning",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-30",
+      "days": 19,
+      "pricePerLitre": 75,
+      "totalPrice": 712.5,
+      "status": "Paused"
+    }
+  ],
+  "deliveries": [
+    {
+      "id": "d1",
+      "userId": "u1",
+      "customerName": "Demo Customer",
+      "date": "2026-11-17",
+      "milk": "Fresh Cow Milk",
+      "litre": 1,
+      "time": "Morning",
+      "address": "Gandhipuram, Coimbatore",
+      "status": "Pending",
+      "deliveryBoy": "Delivery Partner"
+    },
+    {
+      "id": "d2",
+      "userId": "u2",
+      "customerName": "Priya Kumar",
+      "date": "2026-11-17",
+      "milk": "Pure Buffalo Milk",
+      "litre": 0.5,
+      "time": "Morning",
+      "address": "Peelamedu, Coimbatore",
+      "status": "Delivered",
+      "deliveryBoy": "Delivery Partner"
+    }
+  ],
+  "bills": [
+    {
+      "id": "b1",
+      "userId": "u1",
+      "subscriptionId": "s1",
+      "month": "November 2026",
+      "milk": "Fresh Cow Milk",
+      "litre": 1,
+      "days": 21,
+      "pricePerLitre": 60,
+      "total": 1260,
+      "paymentStatus": "Unpaid"
+    },
+    {
+      "id": "b2",
+      "userId": "u2",
+      "subscriptionId": "s2",
+      "month": "November 2026",
+      "milk": "Pure Buffalo Milk",
+      "litre": 0.5,
+      "days": 19,
+      "pricePerLitre": 75,
+      "total": 712.5,
+      "paymentStatus": "Paid"
+    }
+  ],
+  "orders": [
+    {
+      "id": "o1",
+      "userId": "u1",
+      "customerName": "Demo Customer",
+      "productId": "p1",
+      "productName": "Fresh Cow Milk",
+      "category": "Cow Milk",
+      "quantity": 1,
+      "unitPrice": 60,
+      "total": 60,
+      "deliveryDate": "2026-11-21",
+      "deliveryTime": "Morning",
+      "address": "Gandhipuram, Coimbatore",
+      "phone": "9876543210",
+      "notes": "Please call before delivery",
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Pending",
+      "status": "Pending",
+      "orderDate": "2026-11-20T08:00:00.000Z"
+    },
+    {
+      "id": "o2",
+      "userId": "u2",
+      "customerName": "Priya Kumar",
+      "productId": "p3",
+      "productName": "Homemade Curd",
+      "category": "Curd",
+      "quantity": 2,
+      "unitPrice": 80,
+      "total": 160,
+      "deliveryDate": "2026-11-21",
+      "deliveryTime": "Evening",
+      "address": "Peelamedu, Coimbatore",
+      "phone": "9876543211",
+      "notes": "",
+      "paymentMethod": "Cash on Delivery",
+      "paymentStatus": "Pending",
+      "status": "Confirmed",
+      "orderDate": "2026-11-20T09:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "daily-milk-farm-react",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+ "scripts": {
+    "dev": "concurrently \"npm run server\" \"vite\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "json-server --watch db.json --port 3001"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "axios": "^1.7.9",
+    "concurrently": "^10.0.7",
+    "json-server": "^0.17.4",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.1",
+    "vite": "^6.0.5"
+  }
+}

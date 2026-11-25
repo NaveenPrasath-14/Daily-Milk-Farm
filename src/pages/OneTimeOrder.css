@@ -1,0 +1,40 @@
+
+.one-time-form {
+  max-width: 850px;
+  width: 100%;
+  margin-top: 22px;
+}
+
+.order-note {
+  display: grid;
+  gap: 5px;
+  padding: 15px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  background-color: #edf6e9;
+  color: #28763a;
+}
+
+.order-note span {
+  color: #526653;
+  font-size: 13px;
+}
+
+.one-time-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+  .one-time-form {
+    margin-top: 15px;
+  }
+
+  .order-note {
+    padding: 12px;
+  }
+
+  .order-note span {
+    font-size: 12px;
+  }
+}

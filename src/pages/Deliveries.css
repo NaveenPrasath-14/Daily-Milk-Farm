@@ -1,0 +1,62 @@
+
+.delivery-items {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.delivery-item {
+  border: 1px solid #e5e7df;
+  border-radius: 13px;
+  padding: 17px;
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.delivery-item > div:first-child {
+  display: grid;
+  gap: 5px;
+  color: #28763a;
+}
+
+.delivery-item > div:first-child span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.delivery-item h3 {
+  margin: 0 0 5px;
+}
+
+.delivery-item p {
+  color: #64748b;
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.delivery-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.delivery-actions select {
+  border: 1px solid #d4d8cf;
+  border-radius: 7px;
+  padding: 8px;
+}
+
+@media screen and (max-width: 700px) {
+  .delivery-item {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-actions {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

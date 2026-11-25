@@ -1,0 +1,53 @@
+
+.auth-bg {
+  background-color: #fff9e8;
+  padding: 42px 15px;
+}
+
+.auth-card {
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.auth-card h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+.auth-submit {
+  width: 100%;
+}
+
+.auth-bottom {
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.auth-bottom a {
+  color: #27813b;
+  font-weight: 800;
+}
+
+.demo-login {
+  display: grid;
+  gap: 5px;
+  background-color: #f0f7ed;
+  color: #2f6e3a;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .auth-bg {
+    padding: 30px 15px;
+  }
+
+  .auth-card h1 {
+    font-size: 26px;
+  }
+}

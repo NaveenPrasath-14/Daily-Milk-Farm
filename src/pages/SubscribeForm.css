@@ -1,0 +1,70 @@
+
+.subscribe-form {
+  max-width: 850px;
+  width: 100%;
+  margin-top: 22px;
+}
+
+.price-box {
+  background-color: #fff9e8;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.price-box strong {
+  color: #28763a;
+  font-size: 18px;
+}
+
+.plan-list {
+  display: grid;
+  gap: 13px;
+  margin-top: 20px;
+}
+
+.plan-card {
+  border: 1px solid #e5e7df;
+  border-radius: 13px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.plan-card h3 {
+  margin: 5px 0;
+}
+
+.plan-card p {
+  color: #64748b;
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.plan-actions {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .price-box {
+    flex-direction: column;
+  }
+
+  .plan-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .plan-actions {
+    width: 100%;
+  }
+}

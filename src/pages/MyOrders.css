@@ -1,0 +1,22 @@
+
+.order-status {
+  display: grid;
+  justify-items: end;
+  gap: 8px;
+}
+
+.status.Out\ for\ Delivery {
+  background-color: #fff2d9;
+  color: #9a6500;
+}
+
+.status.Confirmed {
+  background-color: #e8f2ff;
+  color: #245b9b;
+}
+
+@media screen and (max-width: 600px) {
+  .order-status {
+    justify-items: start;
+  }
+}

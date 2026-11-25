@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { LogOut, Menu, X } from 'lucide-react'
@@ -14,7 +15,10 @@ function Navbar({ user, logoutUser }) {
     <header className="navbar">
       <div className="nav-inner">
         <Link to="/" className="brand" onClick={closeMenu}>
-          <img src="/images/my-farm.png" alt="Daily Milk Farm" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/my-farm.png`}
+            alt="Daily Milk Farm"
+          />
           <span>Daily <b>Milk Farm</b></span>
         </Link>
 
@@ -42,7 +46,9 @@ function Navbar({ user, logoutUser }) {
             {user ? (
               <>
                 <span>{user.name}</span>
-                <button onClick={() => { logoutUser(); closeMenu() }}><LogOut size={16} /> Logout</button>
+                <button onClick={() => { logoutUser(); closeMenu() }}>
+                  <LogOut size={16} /> Logout
+                </button>
               </>
             ) : (
               <>
@@ -55,9 +61,15 @@ function Navbar({ user, logoutUser }) {
 
         <div className="nav-user desktop-nav-user">
           {user ? (
-            <><span>{user.name}</span><button onClick={logoutUser}><LogOut size={16} /> Logout</button></>
+            <>
+              <span>{user.name}</span>
+              <button onClick={logoutUser}><LogOut size={16} /> Logout</button>
+            </>
           ) : (
-            <><Link to="/login">Login</Link><Link className="nav-signup" to="/register">Sign Up</Link></>
+            <>
+              <Link to="/login">Login</Link>
+              <Link className="nav-signup" to="/register">Sign Up</Link>
+            </>
           )}
         </div>
       </div>
